@@ -3,58 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Belajar Inggris | Nasry</title>
+    <title>English Learning Center | Nasry B</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
-        body { background: #0f172a; color: white; padding: 40px 20px; display: flex; justify-content: center; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        
+        body {
+            background: #0f172a;
+            color: #f8fafc;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
         .container { max-width: 600px; width: 100%; text-align: center; }
-        h1 { color: #38bdf8; margin-bottom: 10px; }
+
+        h1 { color: #38bdf8; margin-bottom: 10px; font-size: 2rem; }
         .description { color: #94a3b8; margin-bottom: 30px; }
         
         .menu-list { display: grid; gap: 15px; }
+        
         .menu-card {
             background: #1e293b;
             padding: 20px;
-            border-radius: 12px;
+            border-radius: 16px;
             border: 1px solid #334155;
             text-decoration: none;
             color: white;
             display: flex;
             align-items: center;
-            transition: 0.3s;
+            transition: all 0.3s ease;
         }
-        .menu-card:hover { border-color: #38bdf8; transform: translateX(10px); }
+
+        .menu-card:hover {
+            transform: translateX(10px);
+            border-color: #38bdf8;
+            background: #24334d;
+        }
+
         .icon { font-size: 2rem; margin-right: 20px; }
         .text-left { text-align: left; }
+        .text-left h3 { font-size: 1.1rem; margin-bottom: 4px; color: #38bdf8; }
+        .text-left p { font-size: 0.85rem; color: #94a3b8; }
         
-        .back-link { margin-top: 30px; display: inline-block; color: #64748b; text-decoration: none; }
+        .back-link { 
+            margin-top: 40px; 
+            display: inline-block; 
+            color: #64748b; 
+            text-decoration: none; 
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
         .back-link:hover { color: #38bdf8; }
     </style>
 </head>
 <body>
+
     <div class="container">
         <h1>🇬🇧 English Learning Center</h1>
         <p class="description">Pilih jenis latihan yang ingin kamu kerjakan hari ini:</p>
 
         <div class="menu-list">
-            <a href="vocab_quiz" class="menu-card">
+            <a href="vocab_quiz.html" class="menu-card">
                 <div class="icon">🎮</div>
                 <div class="text-left">
                     <h3>Vocabulary Quiz</h3>
-                    <p style="font-size: 0.8rem; color: #94a3b8;">Latih kosa kata dasar kamu di sini.</p>
+                    <p>Latih kosa kata dasar kamu dengan kuis interaktif.</p>
                 </div>
             </a>
 
-            <a href="#" class="menu-card" style="opacity: 0.6; cursor: not-allowed;">
+            <a href="gramar_quiz.html" class="menu-card">
                 <div class="icon">📝</div>
                 <div class="text-left">
                     <h3>Grammar Practice</h3>
-                    <p style="font-size: 0.8rem; color: #94a3b8;">(Coming Soon) Latihan struktur kalimat.</p>
+                    <p>Tingkatkan pemahaman tata bahasa dan struktur kalimat.</p>
                 </div>
             </a>
         </div>
 
         <a href="https://nasry01.github.io/" class="back-link">&larr; Kembali ke Portofolio Utama</a>
     </div>
+
 </body>
 </html>
